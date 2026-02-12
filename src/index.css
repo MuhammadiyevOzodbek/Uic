@@ -14,3 +14,6 @@
 body{
     background-color: #1E1E20;
 }
+.blog-outline {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.12);
+}
