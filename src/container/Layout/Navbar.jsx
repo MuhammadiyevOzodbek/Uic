@@ -19,7 +19,7 @@ function Navbar() {
 
           <ul
             className={`flex items-center gap-8 text-gray-300 text-sm tracking-wide transition-all duration-500
-            ${open ? "-translate-x-20 opacity-0" : "translate-x-0 opacity-100"}`}
+            ${open ? "-translate-x-5 opacity-0" : "transition-[width,opacity,transform] duration-150 ease-out"}`}
           >
             <li className="hover:text-white cursor-pointer font-normal text-[16px]">ABOUT US</li>
             <li className="hover:text-white cursor-pointer font-normal text-[16px]">SERVICES</li>
@@ -30,7 +30,7 @@ function Navbar() {
 
           <p
             className={`text-[#9aafb2] text-[22px] font-semibold transition-all duration-500
-            ${open ? "-translate-x-20 opacity-0" : "translate-x-0 opacity-100"}`}
+            ${open ? "-translate-x-5 opacity-0" : "translate-x-0 opacity-100"}`}
           >
             +998 71 <span className="text-white">200 70 07</span>
           </p>
