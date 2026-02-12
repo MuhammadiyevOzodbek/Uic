@@ -8,4 +8,12 @@ export default {
     extend: {},
   },
   plugins: [],
+  theme: {
+    extend: {
+      spacing: {
+        '128': '32rem',
+        '138': '52rem',
+      }
+    }
+  }
 }
