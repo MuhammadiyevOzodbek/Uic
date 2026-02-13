@@ -1,5 +1,6 @@
 import { useState } from "react";
 import uicLogo from "../../../public/layoutImg/UIC logo-1.svg";
+import { Link, Outlet } from "react-router-dom";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -7,10 +8,10 @@ function Navbar() {
 
   return (
     <nav className="w-full absolute top-0 left-0 z-50">
-      <div className="max-w-[1200px] mx-auto flex justify-between items-center pt-[20px] px-4">
+      <div className="max-w-[1150px] mx-auto flex justify-between items-center pt-[20px] px-4">
 
         <div className="flex items-center gap-2">
-          <img src={uicLogo} alt="UIC" className="w-[100px]" />
+          <Link to={'/'}><img src={uicLogo} alt="UIC" className="w-[100px]" /></Link>
           <span className="text-white text-sm">
           </span>
         </div>
@@ -24,13 +25,13 @@ function Navbar() {
             <li className="hover:text-white cursor-pointer font-normal text-[16px]">ABOUT US</li>
             <li className="hover:text-white cursor-pointer font-normal text-[16px]">SERVICES</li>
             <li className="hover:text-white cursor-pointer font-normal text-[16px]">PORTFOLIO</li>
-            <li className="hover:text-white cursor-pointer font-normal text-[16px]">CAREER</li>
-            <li className="hover:text-white cursor-pointer font-normal text-[16px]">BLOG</li>
+            <Link to={'/vacancy'}><li className="hover:text-white cursor-pointer font-normal text-[16px]">CAREER</li></Link>
+            <Link to={'/blog'}><li className="hover:text-white cursor-pointer font-normal text-[16px]">BLOG</li></Link>
           </ul>
 
           <p
             className={`text-[#9aafb2] text-[22px] font-semibold transition-all duration-500
-            ${open ? "-translate-x-5 opacity-0" : "translate-x-0 opacity-100"}`}
+            ${open ? "-translate-x-5 opacity-0" : "translate-x-0 opacity-100"} cursor-pointer`}
           >
             +998 71 <span className="text-white">200 70 07</span>
           </p>
@@ -68,6 +69,7 @@ function Navbar() {
 
         </div>
       </div>
+      <Outlet/>
     </nav>
   )
 }

@@ -1,12 +1,29 @@
-import Blog from "./container/app/Blog/Blog"
+import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import NavbarLayout from "./container/Layout/Navbar"
+import Career from "./container/app/career/Career"
+import Blog from "./container/app/Blog/Blog"
 
 function App() {
+  const routes = createBrowserRouter([
+    {
+      path: '/',
+      element: <NavbarLayout/>,
+      children: [
+        {
+          path: '/vacancy',
+          element: <Career/>
+        },
+        {
+          path: '/blog',
+          element: <Blog/>
+        }
+      ]
+    }
+  ])
 
   return (
     <>
-    <NavbarLayout/>
-    
+    <RouterProvider router={routes}/>
     </>
   )
 }
