@@ -1,9 +1,10 @@
 
 function Career () {
     return(
-        <div className="max-w-[1200px] m-[auto] ">
-            
-                <div class="text-transparent relative flex items-center justify-center whitespace-nowrap border-solid border-inherit text-[56px] font-extrabold uppercase leading-[67px] sm:text-[56px] sm:leading-[67px] md:text-[100px] md:leading-[150px] lg:text-[210px] lg:leading-[252px]"><h1>Career</h1><span class="font-greyCliff absolute left-1/2 top-1/2 flex -translate-x-2/4 translate-y-[-30%] items-center justify-center text-[40px] !font-extrabold uppercase leading-[48px] !text-white sm:text-[40px] sm:leading-[48px] md:text-[56px] md:leading-[74px] lg:text-[78px] lg:leading-[94px]">Career</span></div>
+        <div className="w-[100hv] m-[auto] ">
+            <div className="h-[500px] flex justify-center items-center">
+                <h1 className="text-[230px] font-bold text-transparent text-stroke">CAREER<span className="text-[85px] text-stroke font-bold absolute z-10 top-[290px] right-[610px] text-white text-stroke-none">CAREER</span></h1>
+            </div>
         </div>
     );
 }

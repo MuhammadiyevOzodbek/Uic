@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <nav className="w-full absolute top-0 left-0 z-50">
-      <div className="max-w-[1200px] mx-auto flex justify-between items-center pt-[20px] px-4">
+      <div className="w-[1200px] mx-auto flex justify-between items-center pt-[20px] px-4">
 
         <div className="flex items-center gap-2">
           <Link to={'/'}><img src={uicLogo} alt="UIC" className="w-[100px]" /></Link>
