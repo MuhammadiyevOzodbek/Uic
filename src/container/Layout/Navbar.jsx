@@ -1,6 +1,8 @@
 import { useState } from "react";
 import uicLogo from "../../../public/layoutImg/UIC logo-1.svg";
 import { Link, Outlet } from "react-router-dom";
+import Footer from "../footer/Footer";
+
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -70,6 +72,7 @@ function Navbar() {
         </div>
       </div>
       <Outlet/>
+      <Footer />
     </nav>
   )
 }
